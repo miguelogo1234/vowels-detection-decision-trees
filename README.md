@@ -4,9 +4,9 @@ This repository contains the source code, dataset, and final academic paper for 
 
 ## Repository Structure
 
-* `Notebook 1.ipynb/`: Contains the Jupyter Notebooks script used for dynamic feature extraction (MFCCs, Deltas, Delta-Deltas), data augmentation, and model training.
-* `Audios & Example_Environmental_Noise/`: Contains the original audio recordings (clean Spanish vowels) and some of the the environmental noise samples used for dynamic SNR injection.
-* `Vowels detection using Decision Trees.pdf/`: Contains the final PDF report with the complete methodology, theoretical background, and Out-of-Distribution (OOD) validation.
+* `Notebook 1.ipynb`: Contains the Jupyter Notebook used for dynamic feature extraction (MFCCs, Deltas, Delta-Deltas), data augmentation, and model training.
+* `Audios/ & Example_Environmental_Noise/`: Contains the original audio recordings (clean Spanish vowels) and some of the environmental noise samples used for dynamic SNR injection.
+* `Vowels detection using Decision Trees.pdf`: Contains the final PDF report with the complete methodology, theoretical background, and Out-of-Distribution (OOD) validation.
 * `README.md`: Project documentation.
 
 ## Technologies & Libraries
@@ -32,4 +32,4 @@ To install the necessary libraries, run:
 `pip install librosa soundfile numpy pandas matplotlib scikit-learn`
 
 ## Author
-Miguel Roca - Universidad CEU San Pablo, Montepríncipe
+* **Miguel Roca** - Universidad CEU San Pablo, Montepríncipe
