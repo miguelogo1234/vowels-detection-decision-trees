@@ -1,4 +1,3 @@
-# vowels-detection-decision-trees
 # Automatic Vowel Detection using Decision Trees 
 
 This repository contains the source code, dataset, and final academic paper for the project **"Vowels detection using Decision Trees"**. The system evaluates acoustic resilience in adverse environments, simulating Search and Rescue (SAR) scenarios using Mel-Frequency Cepstral Coefficients (MFCCs), dynamic data augmentation, and Decision Tree classifiers.
