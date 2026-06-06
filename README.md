@@ -1,23 +1,35 @@
-# Automatic Vowel Detection using Decision Trees 
+# Automatic Vowel Detection using Decision Trees
 
 This repository contains the source code, dataset, and final academic paper for the project **"Vowels detection using Decision Trees"**. The system evaluates acoustic resilience in adverse environments, simulating Search and Rescue (SAR) scenarios using Mel-Frequency Cepstral Coefficients (MFCCs), dynamic data augmentation, and Decision Tree classifiers.
 
 ## Repository Structure
 
-* `src/`: Contains the Python scripts / Jupyter Notebooks used for dynamic feature extraction (MFCCs, Deltas, Delta-Deltas) and model training.
-* `dataset/`: Contains the original audio recordings (clean Spanish vowels) and the environmental noise samples used for dynamic SNR injection.
-* `paper/`: Contains the final PDF report with the complete methodology, theoretical background, and Out-of-Distribution (OOD) validation.
+* `Notebook 1.ipynb/`: Contains the Jupyter Notebooks script used for dynamic feature extraction (MFCCs, Deltas, Delta-Deltas), data augmentation, and model training.
+* `Audios & Example_Environmental_Noise/`: Contains the original audio recordings (clean Spanish vowels) and some of the the environmental noise samples used for dynamic SNR injection.
+* `Vowels detection using Decision Trees.pdf/`: Contains the final PDF report with the complete methodology, theoretical background, and Out-of-Distribution (OOD) validation.
 * `README.md`: Project documentation.
 
-## Technologies Used
+## Technologies & Libraries
 
-* **Python 3.x**
-* **scikit-learn:** Implementation of the Decision Tree classifier and hyperparameter tuning (Gini Impurity, pre-pruning).
-* **librosa:** Core audio processing, time stretching, pitch shifting, and mathematical MFCC extraction.
-* **numpy / pandas:** Data structuring and mathematical operations.
+This project was built using **Python 3**. The data pipeline and machine learning models rely on the following libraries:
 
-## How to Run
+**Audio & Data Processing:**
+* `librosa`: Core audio processing, time stretching, pitch shifting, and mathematical MFCC extraction.
+* `soundfile`: Reading and writing audio arrays.
+* `numpy` & `pandas`: Data structuring, arrays, and mathematical operations.
+* `matplotlib.pyplot`: Data visualization and plotting acoustic signatures.
 
-1. Clone this repository to your local machine:
-```bash
-   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+**Machine Learning (`scikit-learn`):**
+* `DecisionTreeClassifier`: Main classification algorithm utilizing Gini Impurity.
+* `GridSearchCV`: Hyperparameter tuning and structural limits.
+* `StandardScaler`: Feature scaling and normalization.
+* `train_test_split` & `accuracy_score`: Dataset partitioning and empirical evaluation.
+
+*(Note: Standard built-in Python libraries such as `os`, `re`, and `random` were also utilized for directory management and stochastic processes).*
+
+## Requirements
+To install the necessary libraries, run:
+`pip install librosa soundfile numpy pandas matplotlib scikit-learn`
+
+## Author
+Miguel Roca - Universidad CEU San Pablo, Montepríncipe
